@@ -104,11 +104,6 @@ rry = rry+[height]+[0]
 area = width*height*(yes/times)
 print(area)
 plt.figure()
-n=1000
-#rand 均匀分布和 randn高斯分布
-x=np.random.randn(1,n)
-y=np.random.randn(1,n)
-#c:散点的颜色，s：散点的大小，alpha:是透明程度
 plt.scatter(rrx,rry,c='red',s=25,alpha=1,marker='o')
 plt.scatter(rrxt,rryt,c='green',s=25,alpha=1,marker='o')
 plt.show()
