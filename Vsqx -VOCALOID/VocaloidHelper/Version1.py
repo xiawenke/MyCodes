@@ -6,7 +6,6 @@ errorNum = 0
 try:
     try:
         inp = 0.75
-        extend = 1/inp
     except Exception as e:
         print("Error in Part0: "+str(e))
         errorNum = errorNum+1
@@ -37,7 +36,9 @@ try:
 
     try:
         vsqx = input("Vsqx File: ").replace('"', "").replace("\\", "/")
+        inp = float(input("Stretch Parameter (Recommand to input 0.75 here):"))
         vsqxFile = vsqx
+        extend = 1/inp
         #vsqx = "test.vsqx"
         whole = 0
         i = 0
