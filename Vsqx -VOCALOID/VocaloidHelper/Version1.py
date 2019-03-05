@@ -81,14 +81,20 @@ try:
 
     try:
         file_put_contents(vsqxFile+".new.vsqx", newVsqx)
-        print("File save in "+vsqxFile+".new.vsqx")
     except Exception as e:
         print("Error in Part4: "+str(e))
         errorNum = errorNum+1
 except Exception as e:
     print("Unexpected Error: "+str(e))
     errorNum = errorNum+1
+print("\n-------------------")
 resS = "Success."
 if(errorNum>0):
     resS = str(errorNum)+" error(s) happenned."
-input(resS+" Press Enter go on...")
+print(resS)
+try:
+    print("File save in "+vsqxFile+".new.vsqx")
+except Exception as e:
+    pass
+print("Coding By @Lazy_Lazy_Man, open source code (Python3): https://github.com/xiawenke/MyCodes/tree/master/Vsqx%20-VOCALOID/VocaloidHelper")
+input(" Press Enter go on...")
